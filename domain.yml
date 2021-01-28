@@ -1,0 +1,131 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+entities:
+- iqama
+- interested
+- edulevel
+- position
+- employed
+- experience
+- certifications
+- englishRate
+- available
+slots:
+  available:
+    type: unfeaturized
+    auto_fill: false
+  certifications:
+    type: unfeaturized
+    auto_fill: false
+  edulevel:
+    type: unfeaturized
+    auto_fill: false
+  employed:
+    type: unfeaturized
+    auto_fill: false
+  englishRate:
+    type: unfeaturized
+    auto_fill: false
+  experience:
+    type: unfeaturized
+    auto_fill: false
+  interested:
+    type: unfeaturized
+    auto_fill: false
+  iqama:
+    type: unfeaturized
+    auto_fill: false
+  position:
+    type: unfeaturized
+    auto_fill: false
+responses:
+  utter_greet:
+  - text: 'we are calling you regarding you intrest in software engineering position,
+      you submitted your resume, are you still interested ? '
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_address:
+  - text: what is your current address
+  utter_iqamaAnswer:
+  - text: kindly confirm or disconfirm if you have iqama or no
+  utter_intrestedAnswer:
+  - text: kindly confirm or disconfirm if yet you are interested
+  utter_iqama:
+  - text: do you have a transferable Iqama
+  utter_eduLevel:
+  - text: what is your level of education ?
+  utter_edulevel_reask:
+  - text: please answer what is your level of education ?
+  utter_employed:
+  - text: have you been employed before ?
+  utter_employed_reask:
+  - text: please answer , have you been employed before ?
+  utter_position:
+  - text: what is your current position?
+  utter_position_reask:
+  - text: please answer ,what is your current position?
+  utter_experience:
+  - text: how many years of experience do you have ?
+  utter_experience_reask:
+  - text: please answer ,how many years of experience do you have ?
+  utter_certifications:
+  - text: do you have any certifications related to your years of experience ?
+  utter_certifications_reask:
+  - text: please answer , do you have any certifications related to your years of
+      experience ?
+  utter_englishRate:
+  - text: how you will rate your English language from 1 to 10 ?
+  utter_englishRate_reask:
+  - text: please answer , how you will rate your English language from 1 to 10 ?
+  utter_available:
+  - text: in case you are approved will you available to be employed immediately ?
+      if no then when you are avaiable ?
+  utter_available_reask:
+  - text: please answer , in case you are approved will you available to be employed
+      immediately ? if no then when you are avaiable ?
+  utter_endcall:
+  - text: thank you , goodbye
+actions:
+- utter_greet
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_address
+- utter_iqamaAnswer
+- utter_intrestedAnswer
+- utter_iqama
+- utter_eduLevel
+- utter_edulevel_reask
+- utter_employed
+- utter_employed_reask
+- utter_position
+- utter_position_reask
+- utter_experience
+- utter_experience_reask
+- utter_certifications
+- utter_certifications_reask
+- utter_englishRate
+- utter_englishRate_reask
+- utter_available
+- utter_available_reask
+- utter_endcall
+forms:
+- ent_form
+- ent_form_iqama
+- ent_form_levelEducation
+- ent_form_employed
+- ent_form_position
+- ent_form_certifications
+- ent_form_englishrate
+- ent_form_available
